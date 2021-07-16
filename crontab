@@ -2,5 +2,5 @@ SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # m h dom   mon dow user    command
-  0 1 *     *   *   root    /usr/bin/mediathekview -auto > /config/MediathekView.log
+  0 1 *     *   *   abc     /usr/bin/mediathekview -auto > /config/MediathekView.log
 #
