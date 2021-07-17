@@ -20,6 +20,7 @@ RUN \
 # add local files
 COPY /root /
 COPY /crontab /etc
+COPY /crond /config/custom-cont-init.d/crond
 
 # ports and volumes
 EXPOSE 8080
