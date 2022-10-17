@@ -11,6 +11,7 @@ on:
       - "master"
   schedule:
     - cron: "5 12 * * 0"
+  workflow_dispatch:
 
 jobs:
   push_to_registry:
