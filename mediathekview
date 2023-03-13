@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+
+# Include the wrappers utility script
+. /usr/lib/java-wrappers/java-wrappers.sh
+
+# MediathekView requires at least Java9 to run
+find_java_runtime java9
+
+run_java -Xms256M -Xmx2G -p /usr/share/mediathekview/lib --add-modules javafx.base,javafx.graphics,javafx.controls,javafx.swing,javafx.media,javafx.web -jar /usr/share/mediathekview/MediathekView.jar "$@"

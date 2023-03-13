@@ -21,6 +21,7 @@ RUN \
 COPY /root /
 COPY /crontab /etc
 COPY /crond /config/custom-cont-init.d/crond
+COPY --chmod=0755 /mediathekview /usr/bin/mediathekview
 
 # ports and volumes
 EXPOSE 8080
